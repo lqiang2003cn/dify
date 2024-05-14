@@ -1,0 +1,8 @@
+# start backend:
+debug app.py
+
+# start frontend:
+sudo docker run -it -p 3001:3000 -e CONSOLE_URL=http://127.0.0.1:5001 -e APP_URL=http://127.0.0.1:5001 langgenius/dify-web:latest
+
+# kill port 3000
+ss -tulpn | grep 3000
